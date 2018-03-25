@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=434;
+		nextID=437;
 	};
 	class LayerIndexProvider
 	{
-		nextID=38;
+		nextID=51;
 	};
 	class Camera
 	{
-		pos[]={12473.707,17.670311,16387.018};
-		dir[]={0.43074095,-0.75332898,-0.49709681};
-		up[]={0.49332088,0.65764093,-0.5693177};
-		aside[]={-0.75579947,8.182833e-007,-0.65490979};
+		pos[]={12483.762,18.161095,16399.414};
+		dir[]={-0.53843695,-0.74738818,-0.38942784};
+		up[]={-0.60558885,0.66438198,-0.43799561};
+		aside[]={-0.58608443,7.1804971e-007,0.81034243};
 	};
 };
 binarizationWanted=0;
@@ -54,13 +54,16 @@ addons[]=
 	"A3_Weapons_F_Items",
 	"ace_medical",
 	"CUP_Weapons_Grenades",
-	"ace_realisticnames"
+	"ace_realisticnames",
+	"tacs_units",
+	"tacs_weapons_hlc",
+	"A3_Props_F_Exp_Military_Camps"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=31;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -225,6 +228,27 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item28
+		{
+			className="tacs_units";
+			name="Theseus Services - Units";
+			author="Theseus Services Team";
+			url="https://github.com/Theseus-Aegis/TheseusServices";
+		};
+		class Item29
+		{
+			className="tacs_weapons_hlc";
+			name="Theseus Services - HLC Weapons Replacement";
+			author="Theseus Services Team";
+			url="https://github.com/Theseus-Aegis/TheseusServices";
+		};
+		class Item30
+		{
+			className="A3_Props_F_Exp";
+			name="Arma 3 Apex - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=10046602;
@@ -234,7 +258,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Scenario";
 		class Attribute0
@@ -284,7 +308,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1;
+		items=3;
 		class Item0
 		{
 			dataType="Layer";
@@ -2387,6 +2411,52 @@ class Mission
 			};
 			id=12;
 			atlOffset=-1805.041;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12474.23,3.0096672,16387.721};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=435;
+					type="tacs_Unit_I_TeamLeader";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=434;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12474.245,4.0513935,16378.417};
+				angles[]={0,0.89954269,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="specScreen";
+			};
+			id=436;
+			type="Land_TripodScreen_01_large_F";
 		};
 	};
 };

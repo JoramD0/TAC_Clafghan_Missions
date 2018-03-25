@@ -3,7 +3,7 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
-            //recompile = 1; // Debug - Requires allowFunctionsRecompile = 1; in description.ext
+            recompile = 1; // Debug - Requires allowFunctionsRecompile = 1; in description.ext
             // Reference README.md for usage instructions
             class baseSpectator;
             class briefing;
@@ -11,6 +11,9 @@ class CfgFunctions {
             class collectIntelPreInit { preInit = 1; };
             class collectIntelPostInit { postInit = 1; };
 			class teleport;
+            class checkDisguise;
+            class addCheckDisguiseAction;
+            class initialiseDisguiseHandler;
         };
     };
 };
