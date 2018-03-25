@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=437;
+		nextID=727;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12483.762,18.161095,16399.414};
-		dir[]={-0.53843695,-0.74738818,-0.38942784};
-		up[]={-0.60558885,0.66438198,-0.43799561};
-		aside[]={-0.58608443,7.1804971e-007,0.81034243};
+		pos[]={12478.829,39.918312,16388.416};
+		dir[]={0.57268184,-0.8013646,-0.17331743};
+		up[]={0.76699299,0.59818208,-0.2321263};
+		aside[]={-0.28969368,1.5032128e-006,-0.95721138};
 	};
 };
 binarizationWanted=0;
@@ -258,7 +258,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -2424,13 +2424,25 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12474.23,3.0096672,16387.721};
+						position[]={12480.293,3.0096672,16389.002};
+						angles[]={0,1.2901675,0};
 					};
 					side="Independent";
 					flags=7;
 					class Attributes
 					{
 						isPlayer=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="tacs_Uniform_Combat_RS_CPS_BP_BB";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
 					};
 					id=435;
 					type="tacs_Unit_I_TeamLeader";
