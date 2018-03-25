@@ -12,6 +12,7 @@
  * Example:
  * [player] call FUNC(initialiseDisguiseHandler);
  */
+#include "..\script_component.hpp"
 #include "..\civilianGear.hpp"
 
 params ["_playerObject"];
@@ -34,6 +35,10 @@ params ["_playerObject"];
 		} else {
 			_setPlayerCaptive = false;
 		};
+	};
+
+	if (missionNamespace getVariable [QGVAR(disguiseBlown), true]) then {
+		_setPlayerCaptive = false;
 	};
 
 	{
