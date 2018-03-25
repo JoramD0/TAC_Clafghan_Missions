@@ -1,4 +1,19 @@
-#include "../civilianGear.hpp"
+/*
+ * Author: Corello
+ * Checks through the players equipment and compares it against the allowed list of civilian gear and displays the status for each item.
+ * Call from functions\fn_addCheckDisguiseAction.sqf
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player] call FUNC(checkDisguise);
+ */
+#include "..\script_component.hpp"
+#include "..\civilianGear.hpp"
 
 params ["_playerObject"];
 
@@ -10,3 +25,13 @@ private _disguisedActionText = parseText format ["<img image='\a3\ui_f\data\igui
     ['<t color="#FF0000">Not disguised</t>','<t color="#12B317">Disguised</t>'] select (vest _playerObject in TAC_CIVILIAN_VESTS),
     ['<t color="#FF0000">Not disguised</t>','<t color="#12B317">Disguised</t>'] select (backpack _playerObject in TAC_CIVILIAN_BACKPACKS)];
 	[_disguisedActionText, 10] call ace_common_fnc_displayTextStructured;
+
+["toggledisguise", {
+    if (missionNamespace getVariable [QGVAR(disguiseBlown), false]) then {
+        missionNamespace setVariable [QGVAR(disguiseBlown), true, true];
+        ["ace_common_systemChatGlobal", "[TAC] Disguise Blown"] call CBA_fnc_globalEvent;
+    } else {
+        missionNamespace setVariable [QGVAR(disguiseBlown), false, true];
+        ["ace_common_systemChatGlobal", "[TAC] Disguise Intact"] call CBA_fnc_globalEvent;
+    };
+}, "admin"] call CBA_fnc_registerChatCommand;

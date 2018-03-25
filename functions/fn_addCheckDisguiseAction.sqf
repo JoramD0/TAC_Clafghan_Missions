@@ -1,4 +1,18 @@
-#include "../script_component.hpp"
+/*
+ * Author: Corello
+ * Adds the "Check Disguise" action to the player upon loading.
+ * Call from initPlayerLocal.sqf and onPlayerRespawn.sqf
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player] call FUNC(addCheckDisguiseAction);
+ */
+#include "..\script_component.hpp"
 
 params ["_playerObject"];
 

@@ -1,4 +1,18 @@
-#include "../civilianGear.hpp"
+/*
+ * Author: Corello
+ * Initialises the Event Handler for periodically checking equipment against the civilian gear list.
+ * Call from initPlayerLocal.sqf.
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player] call FUNC(initialiseDisguiseHandler);
+ */
+#include "..\civilianGear.hpp"
 
 params ["_playerObject"];
 
