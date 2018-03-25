@@ -37,7 +37,7 @@ params ["_playerObject"];
 		};
 	};
 
-	if (missionNamespace getVariable [QGVAR(disguiseBlown), true]) then {
+	if (missionNamespace getVariable [QGVAR(disguiseBlown), false]) then {
 		_setPlayerCaptive = false;
 	};
 
