@@ -3,8 +3,8 @@ class CfgFunctions {
         tag = QUOTE(ADDON);
         class functions {
             file = "functions";
-            recompile = 1; // Debug - Requires allowFunctionsRecompile = 1; in description.ext
-            // Reference README.md for usage instructions
+            recompile = 1;
+            
             class baseSpectator;
             class briefing;
             class collectIntel;
@@ -14,6 +14,9 @@ class CfgFunctions {
             class checkDisguise;
             class addCheckDisguiseAction;
             class initialiseDisguiseHandler;
+
+            class initialiseCities;
+            class createCity;
         };
     };
 };
