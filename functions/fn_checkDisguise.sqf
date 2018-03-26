@@ -24,7 +24,7 @@ private _disguisedActionText = parseText format ["<img image='\a3\ui_f\data\igui
     ['<t color="#FF0000">Not disguised</t>','<t color="#12B317">Disguised</t>'] select (uniform _playerObject in TAC_CIVILIAN_UNIFORMS),
     ['<t color="#FF0000">Not disguised</t>','<t color="#12B317">Disguised</t>'] select (vest _playerObject in TAC_CIVILIAN_VESTS),
     ['<t color="#FF0000">Not disguised</t>','<t color="#12B317">Disguised</t>'] select (backpack _playerObject in TAC_CIVILIAN_BACKPACKS)];
-	[_disguisedActionText, 10] call ace_common_fnc_displayTextStructured;
+	[_disguisedActionText, 10] call ACEFUNC(common,displayTextStructured);
 
 ["toggledisguise", {
     if (missionNamespace getVariable [QGVAR(disguiseBlown), false]) then {

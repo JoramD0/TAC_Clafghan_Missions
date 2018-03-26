@@ -47,5 +47,5 @@ params ["_playerObject"];
 		}
 	} forEach TAC_CIVILIAN_REDZONES;
 
-	[_playerObject, "setCaptive", "tac_disguise", _setPlayerCaptive] call ace_common_fnc_statusEffect_set;
+	[_playerObject, "setCaptive", "tac_disguise", _setPlayerCaptive] call ACEFUNC(common_statusEffect_set);
 }, 1, [_playerObject]] call CBA_fnc_addPerFrameHandler;
