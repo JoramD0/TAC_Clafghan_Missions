@@ -14,9 +14,6 @@
  */
 #include "..\script_component.hpp"
 
-// Exit if not player client
-if (!hasInterface) exitWith {};
-
 params ["_playerObject"];
 
 private _addDisguisedAction = ['check-disguise','Check Disguise','\a3\ui_f\data\igui\cfg\holdactions\holdaction_search_ca.paa',{

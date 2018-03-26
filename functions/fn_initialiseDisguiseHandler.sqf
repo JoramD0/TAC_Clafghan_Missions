@@ -15,9 +15,6 @@
 #include "..\script_component.hpp"
 #include "..\civilianGear.hpp"
 
-// Exit if not player client
-if (!hasInterface) exitWith {};
-
 params ["_playerObject"];
 
 [{
@@ -50,5 +47,5 @@ params ["_playerObject"];
 		}
 	} forEach TAC_CIVILIAN_REDZONES;
 
-	[_playerObject, "setCaptive", "tac_disguise", _setPlayerCaptive] call ACEFUNC(common_statusEffect_set);
+	[_playerObject, "setCaptive", "tac_disguise", _setPlayerCaptive] call ACEFUNC(common,statusEffect_set);
 }, 1, [_playerObject]] call CBA_fnc_addPerFrameHandler;
