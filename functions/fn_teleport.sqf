@@ -23,7 +23,7 @@ private _action = [
     "",
     {
         (_this select 2) params ["_teleportObject", "_text"];
-        titleText [format ["%1ing", _text], "BLACK IN", 2];
+        titleText [format ["%1", _text], "BLACK IN", 2];
         ACE_player setPosASL (getPosASL _teleportObject);
         titleFadeOut 2;
     },
