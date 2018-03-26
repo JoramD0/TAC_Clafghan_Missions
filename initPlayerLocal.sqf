@@ -9,3 +9,5 @@ TAC_disguiseActionAdded = false;
 
 [_player] call FUNC(initialiseDisguiseHandler);
 [_player] call FUNC(addCheckDisguiseAction);
+
+["InitializePlayer", [player]] call BIS_fnc_dynamicGroups;
