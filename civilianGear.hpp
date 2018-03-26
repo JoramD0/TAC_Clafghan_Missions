@@ -24,7 +24,7 @@
 "I_C_Offroad_02_unarmed_F", "I_C_Van_01_transport_F", "I_C_Van_02_vehicle_F", "I_C_Van_02_transport_F", "I_C_Heli_Light_01_civil_F", \
 "I_C_Plane_Civil_01_F", "CUP_I_Datsun_4seat_TK", "CUP_I_V3S_Open_TKG", "CUP_I_V3S_Covered_TKG", "CUP_I_V3S_Refuel_TKG", \
 "CUP_I_V3S_Repair_TKG", "CUP_I_V3S_Rearm_TKG", "tacs_Offroad_I_Black", "CUP_I_SUV_UNO", "CUP_O_UAZ_Unarmed_RU", "CUP_O_UAZ_AMB_RU", \
-"CUP_O_Ural_RU", "CUP_O_Ural_Empty_RU", "CUP_O_Ural_Refuel_RU", "O_G_Boat_Transport_01_F", "O_MU_MIL_Boat_Transport_01_F",\
+"CUP_O_Ural_RU", "CUP_O_Ural_Empty_RU", "CUP_O_Ural_Refuel_RU", "O_G_Boat_Transport_01_F", "O_MU_MIL_Boat_Transport_01_F", \
 "O_MU_MIL_rhib", "O_MU_MIL_Heli_Light_02_unarmed_F", "O_MU_IS_Jeep", "CUP_O_Volha_SLA", "CUP_B_LR_Transport_CZ_D", \
 "CUP_B_T810_Unarmed_CZ_WDL", "CUP_B_T810_Unarmed_CZ_DES", "CUP_B_T810_Refuel_CZ_WDL", "CUP_B_T810_Refuel_CZ_DES", \
 "CUP_B_LR_Transport_GB_D", "CUP_B_LR_Transport_CZ_W", "tacs_Offroad_B_Black"]
@@ -40,8 +40,8 @@
 "U_C_Man_casual_6_F", "U_C_Man_casual_4_F", "U_C_Man_casual_5_F", "tacs_Uniform_Polo_CP_LS_TP_OB", "tacs_Uniform_Polo_CP_RS_LP_BB", \
 "tacs_Suit_VIP", "U_C_Journalist", "U_B_Wetsuit", "U_MU_B_GuerillaGarment2", "U_MU_B_GuerillaGarment2_blue", \
 "U_MU_B_GuerillaGarment2_brown", "U_MU_B_GuerillaGarment2_grey", "U_MU_B_GuerillaGarment2_redcamo", "U_MU_B_GuerillaGarment2_orange", \
-"U_MU_B_GuerillaGarment2_skull", "U_MU_B_GuerillaGarment2_yellow", "U_C_ConstructionCoverall_Black_F", "U_C_ConstructionCoverall_Blue_F" \
-"U_C_ConstructionCoverall_Red_F", "U_C_ConstructionCoverall_Vrana_F", "U_C_Mechanic_01_F", "CUP_U_C_Rescuer_01", "U_C_Paramedic_01_F" \
+"U_MU_B_GuerillaGarment2_skull", "U_MU_B_GuerillaGarment2_yellow", "U_C_ConstructionCoverall_Black_F", "U_C_ConstructionCoverall_Blue_F", \
+"U_C_ConstructionCoverall_Red_F", "U_C_ConstructionCoverall_Vrana_F", "U_C_Mechanic_01_F", "CUP_U_C_Rescuer_01", "U_C_Paramedic_01_F", \
 "CUP_U_C_Pilot_01"]
 
 #define TAC_CIVILIAN_HEADGEAR ["", "Afghan_01Hat", "Afghan_02Hat", "Afghan_03Hat", "Afghan_04Hat", "Afghan_05Hat", "Afghan_06Hat", \
@@ -61,8 +61,8 @@
 "B_Messenger_IDAP_F", "CUP_B_RUS_Backpack"]
 
 #define TAC_CIVILIAN_VESTS ["", "V_Press_F", "V_RebreatherB", "lbt_pouchless_od", "lbt_pouchless_coy", "V_DeckCrew_blue_F", \
-"V_DeckCrew_green_F", "V_DeckCrew_red_F", "V_DeckCrew_white_F", "V_DeckCrew_yellow_F", "V_DeckCrew_violet_F", "V_DeckCrew_brown_F" \
-"V_Plain_crystal_F", "V_Plain_medical_F", "V_LegStrapBag_black_F", "V_LegStrapBag_coyote_F", "V_LegStrapBag_olive_F" \
+"V_DeckCrew_green_F", "V_DeckCrew_red_F", "V_DeckCrew_white_F", "V_DeckCrew_yellow_F", "V_DeckCrew_violet_F", "V_DeckCrew_brown_F", \
+"V_Plain_crystal_F", "V_Plain_medical_F", "V_LegStrapBag_black_F", "V_LegStrapBag_coyote_F", "V_LegStrapBag_olive_F", \
 "V_Safety_blue_F", "V_Safety_orange_F", "V_Safety_yellow_F", "CUP_V_OI_TKI_Jacket1_04", "CUP_V_OI_TKI_Jacket1_05", \
 "CUP_V_OI_TKI_Jacket1_06", "CUP_V_OI_TKI_Jacket5_04", "CUP_V_OI_TKI_Jacket5_05", "CUP_V_OI_TKI_Jacket5_06", \
 "CUP_V_OI_TKI_Jacket6_04", "CUP_V_OI_TKI_Jacket6_05", "CUP_V_OI_TKI_Jacket6_06"]
@@ -72,4 +72,4 @@
 "G_Spectacles", "G_Sport_Red", "G_Sport_Blackyellow", "G_Sport_BlackWhite", "G_Sport_Checkered", "G_Sport_BlackredG_Sport_Greenblack", \
 "G_Squares_Tinted", "G_Squares", "G_Spectacles_Tinted", "tacs_goggles_black", "tacs_Goggles_Green", "tacs_Goggles_Tan"]
 
-#define TAC_CIVILIAN_REDZONES []
+#define TAC_CIVILIAN_REDZONES ["embassy_marker"]
