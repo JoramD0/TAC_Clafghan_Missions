@@ -15,6 +15,9 @@
 #include "..\script_component.hpp"
 #include "..\civilianGear.hpp"
 
+// Exit if not player client
+if (!hasInterface) exitWith {};
+
 params ["_playerObject"];
 
 private _disguisedActionText = parseText format ["<img image='\a3\ui_f\data\igui\cfg\holdactions\holdaction_search_ca.paa' size='3' align='center'/><br/>%1<br/><br/>Head:<br/>%2<br/><br/>Glasses:<br/>%3<br/><br/>Uniform:<br/>%4<br/><br/>Vest:<br/>%5<br/><br/>Backpack:<br/>%6",

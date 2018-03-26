@@ -15,6 +15,9 @@
 #include "..\script_component.hpp"
 #include "..\civilianGear.hpp"
 
+// Exit if not player client
+if (!hasInterface) exitWith {};
+
 params ["_playerObject"];
 
 [{
